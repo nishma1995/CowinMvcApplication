@@ -1,0 +1,17 @@
+﻿@using CowinMvcApplication.Models
+@model IEnumerable<StateRoot>
+@{
+    ViewBag.Title = "Index1";
+}
+
+<h2>Index1</h2>
+
+<select>
+    @foreach (var item in Model)
+    {
+
+        <option value="@item.states"></option>
+
+
+    }
+</select>
